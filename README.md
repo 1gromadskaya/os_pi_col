@@ -88,7 +88,9 @@ TEST(FibonacciTest, EdgeCases) {
     EXPECT_EQ(fibonacci(0), std::vector<int>());
     EXPECT_EQ(fibonacci(-5), std::vector<int>());
 }
-
+```
+## 2) Палиндром
+```cpp
 #include <gtest/gtest.h>
 #include <string>
 
@@ -107,7 +109,9 @@ TEST(PalindromeTest, NegativeCases) {
     EXPECT_FALSE(is_palindrome(123));
     EXPECT_FALSE(is_palindrome(10));
 }
-
+```
+## 3) Развернуть связный список используя итеративный подход.
+```cpp
 #include <gtest/gtest.h>
 
 struct Node {
@@ -145,5 +149,5 @@ TEST(LinkedListTest, ReverseList) {
     Node* reversed = reverse_list(head);
     EXPECT_EQ(list_to_vector(reversed), std::vector<int>({3, 2, 1}));
 }
-
+```
 
